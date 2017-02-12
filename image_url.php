@@ -9,9 +9,9 @@ $url_test = 'https://graph.yuantathai.com/InvestorWebCharts/Modules/Standard.asp
 $symbol = $_GET['symbol'];
 $perior = $_GET['perior'];
 $date = date('Ymd');
-$remoteImage = str_replace($this->arg_symbol,$symbol,$this->url_test);
-$remoteImage = str_replace($this->arg_period,$perior,$remoteImage);
-$remoteImage = str_replace($this->arg_date,$date,$remoteImage);
+$remoteImage = str_replace($arg_symbol,$symbol,$this->url_test);
+$remoteImage = str_replace($arg_period,$perior,$remoteImage);
+$remoteImage = str_replace($arg_date,$date,$remoteImage);
 $imginfo = getimagesize($remoteImage);
 header("Content-type: {$imginfo['mime']}");
 readfile($remoteImage);
