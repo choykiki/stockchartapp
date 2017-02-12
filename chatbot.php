@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
                     curl_setopt( $ch, CURLOPT_HEADER, 0);
                     curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
                     $reponse = curl_exec($ch);
-
+                    $reponse = json_encode($reponse);
                     echo $reponse;
 
 
