@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			// ];
 
 			// Make a POST Request to Messaging API to reply to sender
-			$urlApi = 'http://www.khroton.com/comic/public/chatbot';
+			$urlApi = 'http://103.13.231.224/comic/public/chatbot';
 
             $myvars = 'text=' . $text . '&replyToken=' . $replyToken;
 
@@ -65,4 +65,3 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-echo "replyToken";

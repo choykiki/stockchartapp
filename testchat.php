@@ -1,6 +1,6 @@
 <?php
 
-$urlApi = 'http://www.khroton.com/comic/public/chatbot';
+$urlApi = 'http://103.13.231.224/comic/public/chatbot';
 
             $myvars = 'text=' . $text . '&replyToken=' . $replyToken;
 
