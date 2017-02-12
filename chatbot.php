@@ -35,6 +35,8 @@ if (!is_null($events['events'])) {
                     curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
                     $reponse = curl_exec($ch);
 
+                    echo $reponse;
+
 
 			// $messages = [
 			// 	'type' => 'image',
@@ -60,8 +62,8 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-			echo $result . "\r\n";
+			// echo $result . "\r\n";
 		}
 	}
 }
-echo "OK";
+// echo "OK";
